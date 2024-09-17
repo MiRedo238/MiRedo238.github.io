@@ -1,52 +1,77 @@
-body{
-    background-image: url('soft-blue-watercolor-abstract-background_3590-231.png');
-    background-size: cover;
-    font-family: tahoma;
-font-size: 100%;
-margin: 10px 50px 15px 100px;
-    }
-header {
-    height: auto;
-    padding: 16px;
-    text-align: center;
-    font-size: 35px;
+    body{
 background-color: white;
+font-family: Courier New;
+font-size: 100%;
+margin: 0px 0px 0px 0px;
+display: grid;
+grid-template-rows: auto 1fr auto;
+grid-template-areas: 
+"header"
+"main"
+"footer";
+
+        
+    }
+
+
+
+header {
+grid-area: header;
+background-image: url('soft-blue-watercolor-abstract-background_3590-231.png');
+background-size: cover;
+height: auto;
+width: 100%;
+padding: 16px;
+text-align: center;
+font-size: 35px;
+color: #648491;
+position:fixed
+    }
+
+    main{
+grid-area: main;
+margin-left:15%;
+width:70%; 
+background-color: white;
+padding: 10px;
+color: #11506b;
+display:grid;        
+text-align: center;
+    
+        img {
+height: 300px;
+width: auto;
+object-fit: cover;
+            }     
+    }
+
+
+    .sider {
+width: 20%;
+float: left;
+padding: 20px;
+text-align: center;
+font-style: italic;
+background-color: white; 
 color: #648491;
     }
-article{
-    width:70%; 
-    background-color: white;
-    padding: 60px;
-    color: #11506b;
-    
-img {
-     height: 500px;
-    width: auto;
-            }
-    }
 
-aside {
-    width: 20%;
-    float: right;
-    padding: 30px;
-    text-align: center;
-    font-style: italic;
-    background-color: white; 
-    color: #648491;
+    .sidel {
+width: 75%;
+float: right;
+padding: 5px;
+text-align: left;
 
-    img {
-     height: 300px;
-    width: auto;
-            }
-    }
+background-color: white; 
+
+}
 
     nav {
 &.primary-navigation {
 margin: 0 auto;
 display: block;
 
-padding: 120px 0 0 0;  
-text-align: left;
+text-align: center;
 font-size: 20px;
 
 ul li {
@@ -58,7 +83,7 @@ ul li {
   position: relative;
   text-decoration: none;
   text-align: center;
-  font-family: arvo;
+  font-family: Courier New;
 }
 
 li a {
@@ -122,4 +147,46 @@ text-decoration: none;
 
 ul li ul li a { transition: all 0.5s ease; }
 
+.below{
+    margin-top: 0;
+padding-top: 98px;
 
+transition: .3s;
+}
+
+footer {
+background-color: #d3e3f2;
+color: #2d677e;
+width: auto;
+    padding-left: 10px;
+grid-area: footer;
+font-family: Courier New;
+
+}
+
+.hide {
+opacity: 0;
+}
+
+.hide:hover {
+opacity: 80%;
+}
+
+fieldset {
+  background-color: #f1f8fe;
+    width: 50px;
+    margin-bottom: 5px;
+     margin-left: 27%;
+   text-align: center;
+}
+
+legend {
+  background-color: #648491;
+  color: white;
+  padding: 5px 10px;
+}
+
+input, textarea {
+    font-family: Courier New;
+  margin: 5px;
+}

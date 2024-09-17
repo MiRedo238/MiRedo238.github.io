@@ -5,58 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfilio</title>
 	<link href='style.css' rel='stylesheet'>
-
 </head>
 <body>
-    
-
-<header>
+  <header>
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
 
 <nav role="navigation" class="primary-navigation">
   <ul>
-    <li><a href="index.html">Home</a></li>
+    <li><a href="#aboutme"> About me</a></li>
     <li><a href="#">Works &dtrif;</a>
       <ul class="dropdown">
-        <li><a href="personalWorks.html">Personal Works</a></li>
-        <li><a href="schoolProjects.html"> School Projects</a></li>
+        <li><a href="#personalworks">Personal Works</a></li>
+        <li><a href="#schoolworks"> School Projects</a></li>
       </ul>
     </li>
-    <li><a href="#">About</a></li>
   </ul>
 </nav> 
 </header>
-
-
-
-
-
-    <aside>
-    <img src="Imgs\FB_IMG_1721787602864.jpg">        
-    <h4>About me</h4>
-    <p>A 21 year old girl studying Computer Science after solidifying her stance that Nursing was not for her</p>
-    </aside>   
-
-
- 
-	<article>
-     <h4>Favorites:</h4>
-        <ul>
-            <li>Anime/games</li>
-            <li>Joseimuke mobile games</li>
-            <li>Black Live</li>
-        </ul>
     
-    <h4>Talents:</h4>
-        <ul>
-            <li> Creative Art - (Digital/Traditional, Crafting(i.e. Crochet/Kniting, Sculpting, Needlefelting)) </li>
-            <li>Performing Arts - (Singing, Acting)</li>
-            <li> Organization and Management</li>
-        </ul>   
-         
-    <p> - More content to be added soon -</p>    
-	</article>
+<div class="below">
 
+
+	<main>
+            <p> - More stuff to be added soon -</p>  
+        <div id= aboutme class="aboutme">        
+            <h3>About me</h3>
+                <div class="sider">
+                    <img src="Imgs\FB_IMG_1721787602864.jpg">   
+                <p>There are no facts, only interpretations. The real world is much smaller than the imaginary.</p>
+                    <p>- Friedrich Nietzsche</p>
+                </div>
+         
+    
+                <div class="sidel"> 
+                    <h4>Mi<span class="hide">ka</span> Re<span class="hide">gala</span>do</h4>
+                    <p>Born in the Philipines, lived in the United States, she has strived to live better than what her parents had to face when they were younger.</p>
+                    <p>With the disposition she has and adversities she face, she catered all of her likes and interests into
+                        the goals she wants to achieve and in the works she does. </p>
+                   
+    
+                    <h4>Talents:</h4>
+                    <dl>
+                        <dt>- Creative Art</dt>
+                            <dd>Digital/Traditional, Crafting(i.e. Crochet/Kniting, Sculpting, Needlefelting)</dd>
+                        <dt>- Performing Arts</dt>
+                            <dd>Singing, Acting</dd>
+                        <dt>- Organization and Management (for others)</dt>
+                            <dd>For herself is debatable</dd>
+                    </dl>
+        
+
+                    <h4>Other info</h4>
+
+                        <table> 
+                            <tr>
+                                <th>Likes</th>
+                                <th>Disikes</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li>Anime/games</li>
+                                        <li>Joseimuke mobile games</li>
+                                        <li>Live Concerts</li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul>
+                                        <li>Spicy Foods</li>
+                                        <li>Unable to communicate</li>
+                                        <li>Outer Space</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    
+                    
+                    </div>
+       
+
+        </div>
+         
+         <div id=other>
+<h3>Works</h3>
+        <div id=personalworks>
+            <h4>Personal Works</h4>    
+            <img src="Imgs/20240108_035014.jpg">
+            <img src="Imgs/20240419_071357.jpg">
+            <img src="Imgs/20240419_081849.jpg">
+        </div>
+             
+        <div id=schoolworks>
+            <h4>School Works</h4> 
+             
+        </div>
+
+
+
+
+
+
+        </div>
+    
+	</main>
+        
+    
+    
+</div>
+
+<footer>
+
+<h4> </h4>
+<form>
+ <fieldset>
+  <legend>Send a Message:</legend>
+  <input type="text" placeholder="Name">
+  <input type="text" placeholder="Email"><br>
+ <textarea name="addressIn" id="txtA" rows="5" cols="80" placeholder="Message here"></textarea>
+<br>
+     
+  <input type="submit" value="Submit">
+ </fieldset>
+</form>
+</footer> 
+    
 
 </body>
 </html>
