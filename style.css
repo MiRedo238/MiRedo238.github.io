@@ -17,7 +17,7 @@ grid-template-areas:
 
 header {
 grid-area: header;
-background-image: url("Imgs/soft-blue-watercolor-abstract-background_3590-231.png");
+background-image: url('soft-blue-watercolor-abstract-background_3590-231.png');
 background-size: cover;
 height: auto;
 width: 100%;
