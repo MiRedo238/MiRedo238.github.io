@@ -176,7 +176,7 @@ fieldset {
   background-color: #f1f8fe;
     width: 50px;
     margin-bottom: 5px;
-     margin-left: 27%;
+     margin-left: 32%;
    text-align: center;
 }
 
@@ -190,3 +190,9 @@ input, textarea {
     font-family: Courier New;
   margin: 5px;
 }
+
+.sch:hover {
+opacity: 80%;
+transition-duration: 4ms;
+}
+
