@@ -79,22 +79,17 @@ main {
     }
 }
 
-.side-r {
-    width: 20%;
-    float: left;
-    padding: 20px;
-    text-align: center;
-    font-style: italic;
-    color: var(--main);
-    position: -webkit-sticky;
+.aboutme {
+display: flex;
+flex-direction: row;
 }
 
-.side-l {
-    width: 72%;
-    float: right;
-    padding: 5px;
-    text-align: left;
+.side-r {
+color: var(--main);
+text-align: center;    
 }
+
+
 
 nav {
     visibility: visible;
@@ -231,12 +226,7 @@ textarea {
 
 
 @media all  and (max-width: 900px) {
-    .side-l {
-        width: 46%;
-    }
-    .side-r {
-        width: 40%;
-    }
+
     img.side-r {
         height: 50px;
         width: auto;
@@ -250,22 +240,35 @@ textarea {
         visibility: visible;}
 }
 
-@media all and (max-width: 510px) {
+@media all and (max-width: 600px) {
 
     body{
         width: 500px;
         
     }
-.side-l {
-        width: 100%;
+    .aboutme {
+        flex-direction: column;}
+        #personalworks{
+            display: flex;
+            flex-flow:  row wrap;
+            img {
+                width: 100px;
+                height: auto;
+                justify-content: center;
+}
+            video {
+                width: 200px;
+                height: auto;
+                justify-content: center;
+}
+}
+    #schoolworks {
+        img {
+                width: 150px;
+                height: auto;
+                justify-content: center;
+}
     }
-    h4.side-l {
-        text-align: center;
-    }
-    .side-r {
-        width: 100%;
-    }
-        
         nav{
             visibility: hidden;
 }
