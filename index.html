@@ -6,6 +6,7 @@
     <title>Personal Portfilio</title>
 	<link href='style.css' rel='stylesheet'>
     <script type="text/javascript" src="darkmode.js" defer></script>
+    <script type="text/javascript" src="navigation.js" defer></script>
 </head>
 <body>
   <header>
@@ -13,13 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
 <nav role="navigation" class="primary-navigation">
   <ul>
-    <li><a href="#aboutme"> About me</a></li>
-    <li><a href="#works">Works &dtrif;</a>
-      <ul class="dropdown">
-        <li><a href="#personalworks">Personal Works</a></li>
-        <li><a href="#schoolworks"> School Projects</a></li>
-      </ul>    
-    </li>
+    <li><a href="#" data-section="about">About me</a></li>
+    <li><a href="#" data-section="other">Works</a></li>
   </ul>
 </nav> 
 <button id="theme-switch" >
@@ -29,10 +25,8 @@
 </header>
     
 <div class="below">
-
-
 	<main>
-            <p> - More stuff to be added soon -</p> 
+<div id="about" class="section active">
         <h3>About me</h3>
         <div id= aboutme class="aboutme">        
                 <div class="side-r">
@@ -90,12 +84,11 @@
        
 
         </div>
-         
-         <div id=other>
-<h3 id="works">Works</h3>
+         </div>
+         <div id=other class="section">
+             <h3 id="works">Works</h3>
              <h4>Personal Works</h4>  
-        <div id=personalworks>
-              
+        <div id="personalworks">
             <img src="Imgs/20240108_035014.jpg">
             <img src="Imgs/20240419_071357.jpg">
             <img src="Imgs/20240419_081849.jpg">
@@ -106,21 +99,16 @@
             <audio controls autoplay muted>
                 <source src="OtherMedia/Blanche%20Cover.mp3" type="audio/mp3">
               </audio>
-
-              
-
         </div>
+             
+             
              <h4>School Works</h4> 
-        <div id=schoolworks>
+        <div id="schoolworks">
             <a href="SchoolWorks/Html/Fashion Blog.html"> <img src="https://raw.githubusercontent.com/cbatuic/fashion-blog/main/profile.jpg" class="sch"> </a>
             <a href="SchoolWorks/CSS/healthy recepies/index.html"> <img src="https://content.codecademy.com/courses/freelance-1/unit-2/salad.jpg" alt="Kale Caeasar Salad" class="sch"> </a>
             <a href="SchoolWorks/CSS/olivia-woodruff-portfolio/index (1).html"> <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-2/travel.jpeg" style="width: 300px;" class="sch"> </a>
             <a href="SchoolWorks/CSS/media query/index (1).html"> <img src="Imgs/FB_IMG_1721787608276.jpg" class="sch"> </a>
         </div>
-
-
-
-
 
 
         </div>
@@ -147,6 +135,5 @@
 </form>
 </footer> 
     
-
 </body>
 </html>

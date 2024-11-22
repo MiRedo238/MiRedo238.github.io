@@ -269,9 +269,7 @@ textarea {
                 justify-content: center;
 }
     }
-        nav{
-            visibility: hidden;
-}
+    
 
     footer{
 width: 480px;
@@ -285,5 +283,14 @@ width: 480px;
 
 }
     
+.section {
+            display: none;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
 
+        .section.active {
+            display: block;
+        }
     
